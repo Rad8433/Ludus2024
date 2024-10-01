@@ -1,8 +1,8 @@
 const config = {
   type: Phaser.AUTO,
   parent: "canvas-wrapper",
-  width: 1400,
-  height: 800,
+  width: 960,
+  height: 640,
   scene: [
     sceneAccueil,
     sceneCommentJouer,
@@ -11,5 +11,12 @@ const config = {
     scenePartieTerminee,
     sceneVictoire,
   ],
+  physics: {
+    default: "arcade",
+    arcade: {
+      gravity: { y: 500 },
+      debug: true,
+    },
+  },
 };
 const game = new Phaser.Game(config);

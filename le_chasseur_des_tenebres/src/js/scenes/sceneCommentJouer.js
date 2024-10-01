@@ -4,7 +4,7 @@ class sceneCommentJouer extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image("btnRetour", "assets/images/btn_retour.png");
+    this.load.image("btnRetour", "./assets/images/btn_retour.png");
   }
 
   create() {

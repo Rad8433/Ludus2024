@@ -4,7 +4,10 @@ class sceneVictoire extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image("btnMenuPrincipal", "assets/images/btn_menu_principal.png");
+    this.load.image(
+      "btnMenuPrincipal",
+      "./assets/images/btn_menu_principal.png"
+    );
   }
 
   create() {
